@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MvcMovie.Models;
+using PagesMovie.Models;
 
-namespace MvcMovie.Data
+namespace PagesMovie.Data
 {
     public class PagesMovieContext : DbContext
     {
@@ -15,6 +15,6 @@ namespace MvcMovie.Data
         {
         }
 
-        public DbSet<MvcMovie.Models.Movie> Movie { get; set; }
+        public DbSet<PagesMovie.Models.Movie> Movie { get; set; }
     }
 }
