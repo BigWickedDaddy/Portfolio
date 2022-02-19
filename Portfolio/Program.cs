@@ -1,6 +1,13 @@
 using Portfolio.Middleware;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MvcMovie.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<PagesMovieContext>(options =>
+
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PagesMovieContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -26,6 +33,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=PortfolioMainPage}/{action=Portfolio}/{id?}");
 
 app.Run();
