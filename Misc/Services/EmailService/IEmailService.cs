@@ -1,8 +1,12 @@
 ﻿
+using Misc.Services.EmailService.Models;
+
 namespace Misc.Services.EmailService
 {
-    internal interface IEmailService
+    public interface IEmailService
     {
-        public void SendEmail(Message message);
+        public void SendGmail(EmailModel emailModel);
+
+        //public void SendEmail(Message message);
     }
 }
