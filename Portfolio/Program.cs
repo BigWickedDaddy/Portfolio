@@ -1,9 +1,15 @@
+using Portfolio;
 using Portfolio.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ApplicationContext>(opts =>
+    opts.UseSqlServer(Configuration.GetConnectionString("sqlConnection")));
+
+
 //builder.Services.AddTransient<EmailService>();
 
 var app = builder.Build();

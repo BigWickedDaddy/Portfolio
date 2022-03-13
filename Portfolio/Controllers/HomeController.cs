@@ -10,10 +10,13 @@ namespace Portfolio.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private IEmailService? _emailService;
+        private ApplicationContext _db;
+
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            //_db = context;
         }
 
         public IActionResult Index()
