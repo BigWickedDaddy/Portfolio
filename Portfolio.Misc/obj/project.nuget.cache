@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "1mRTTA7AiZ3MPCipKqxEd0DtwvQitHA0XPr/nd/M7JALJvjtOUpaCQ0AGF64ptvOcm6+fjWULh1qrn2E6dJJhw==",
+  "success": true,
+  "projectFilePath": "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio.Misc/Portfolio.Misc.csproj",
+  "expectedPackageFiles": [
+    "/Users/olegsolovyanenko/.nuget/packages/mailkit/3.1.1/mailkit.3.1.1.nupkg.sha512",
+    "/Users/olegsolovyanenko/.nuget/packages/mimekit/3.1.1/mimekit.3.1.1.nupkg.sha512",
+    "/Users/olegsolovyanenko/.nuget/packages/portable.bouncycastle/1.9.0/portable.bouncycastle.1.9.0.nupkg.sha512",
+    "/Users/olegsolovyanenko/.nuget/packages/system.formats.asn1/6.0.0/system.formats.asn1.6.0.0.nupkg.sha512",
+    "/Users/olegsolovyanenko/.nuget/packages/system.security.cryptography.pkcs/6.0.0/system.security.cryptography.pkcs.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

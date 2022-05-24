@@ -1,10 +1,18 @@
+using System.Configuration;
 using Portfolio.Middleware;
+using Portfolio.Misc.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<IEmailService, EmailService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppContext>(options => options.UseNpgsql(
+        builder.Configuration.GetConnectionString("Connect")
+    )
+);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

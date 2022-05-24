@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olegs\\source\\Portfolio\\Portfolio\\Portfolio\\Portfolio.csproj": {}
+    "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio/Portfolio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olegs\\source\\Portfolio\\Portfolio\\Portfolio\\Portfolio.csproj": {
+    "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio.Misc/Portfolio.Misc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olegs\\source\\Portfolio\\Portfolio\\Portfolio\\Portfolio.csproj",
-        "projectName": "Portfolio",
-        "projectPath": "C:\\Users\\olegs\\source\\Portfolio\\Portfolio\\Portfolio\\Portfolio.csproj",
-        "packagesPath": "C:\\Users\\olegs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olegs\\source\\Portfolio\\Portfolio\\Portfolio\\obj\\",
+        "projectUniqueName": "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio.Misc/Portfolio.Misc.csproj",
+        "projectName": "Portfolio.Misc",
+        "projectPath": "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio.Misc/Portfolio.Misc.csproj",
+        "packagesPath": "/Users/olegsolovyanenko/.nuget/packages/",
+        "outputPath": "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio.Misc/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\olegs\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/olegsolovyanenko/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +37,78 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio/Portfolio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio/Portfolio.csproj",
+        "projectName": "Portfolio",
+        "projectPath": "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio/Portfolio.csproj",
+        "packagesPath": "/Users/olegsolovyanenko/.nuget/packages/",
+        "outputPath": "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/olegsolovyanenko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio.Misc/Portfolio.Misc.csproj": {
+                "projectPath": "/Users/olegsolovyanenko/Documents/GitHub/Portfolio/Portfolio.Misc/Portfolio.Misc.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +127,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
